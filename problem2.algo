@@ -1,0 +1,32 @@
+
+/*You are asked to write an algorithm that fulfill the following: 
+
+Name: Dot product
+Description:
+Write a procedure, called dot_product which calculates in the variable ps, the dot(scalar) product of v1 and v2 (v1 and v2 are vectors of IR)
+Write an algorithm which determines, for n pairs of given vectors, whether two vectors of given IR are orthogonal, by calling the procedure defined in the previous question. The dot product of two orthogonal vectors is zero.
+Modify the previous algorithm if you use a dot_product function instead of a procedure.*/
+
+//the procedure
+
+PROCEDURE Dot_product(V1: ARRAY_OF INTEGER,V2: ARRAY_OF INTEGER,VAR ps:FLOAT)
+VAR
+  i:INTEGER;
+BEGIN
+ ps=0;
+  FOR i FROM 0 TO V1.length STEP 1  DO
+    ps:=ps+V1[i]*V2[i]
+  END_FOR
+END
+
+ALGORITHM problem2
+VAR
+  set_declarations
+BEGIN
+  FOR i FROM 0 TO n STEP 1  DO
+    Dot_product(Vect1,Vect2,VAR ps)
+    IF (ps==0) THEN
+      
+    END_IF
+  END_FOR
+END
